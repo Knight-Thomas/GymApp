@@ -3,38 +3,60 @@ import sqlite3 as sq
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 import sys
 
+conn = sq.connect('GymAppUsers.db')
+cur = conn.cursor()
+
 class Ui(QtWidgets.QMainWindow):
-    '''This is a window class based on the xml code in the loguin ui'''
+    '''This is a window class based om the xml code in the login ui'''
     def __init__(self):
         '''constructor method'''
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardCreateAccount.ui', self)
-
-        #add event listeners
-        self.CreateAccount.clicked.connect(self.CreateAccount())
-        #show the window
+        #add event listeners here
+        self.CreateAccount.clicked.connect(self.createAccount)
+        #self.AlreadyHaveAnAccount.clicked.connect(self.alreadyHaveAnAccount)
         self.show()
 
-    def CreateAccount(self):
-        '''Handle click events on the CreateAccount button'''
+    def createAccount(self):
+        '''Create account button handler'''
         #access form line edits
-        enteredUsername = self.UsernameInput.text()
-        enteredPassword = self.PasswordInput.text()
-        enteredEmail = self.EmailInput.text()
-        enteredPhone = self.PhoneNumberInput.int()
-        #perform validation on the username and password
-        if enteredPassword == '' or enteredUsername =='' or enteredEmail =='' or enteredPhone =='':
-            messageBoxHandler('Blank fields detected','Password and Username must be entered','warning')
+        email = self.EmailInput.text()
+        phone = self.PhoneNumberInput.text()
+        username = self.UsernameInput.text()
+        password = self.PasswordInput.text()
+        height = self.HeightInput.num()
+        weight = self.WeightInput.num()
+        age = self.AgeInput.num()
+        if email =='' or phone =='' or username =='' or password =='':
+            messageBoxHandler('Creation Failed','All Fields must be filled','warning')
         else:
-            #query to insert new account into database
-            query =f"""INSERT """
-            executeStatementHelper(query, (enteredUsername,))
+            '''query to insert new account into database'''
+            print('success')
 
-    def DBconnect():
-        '''creates a connection to the database'''
-        try:
-            conn = sq.connect("GymAppUsers.db")
-            c = conn.cursor()
-            return conn, c
-        except sq.Error as e:
-            print(f'Database conection error: {e}')
+def messageBoxHandler(title, message, iconType='info'):
+    '''this will display a dialogue message'''
+    msgBox = QtWidgets.QMessageBox()
+    #set icon type nased on the flag
+    if iconType == 'info':
+        msgBox.setIcon(QtWidgets.QMessageBox.Information)
+    elif iconType == 'question':
+        msgBox.setIcon(QtWidgets.QMessageBox.Question)
+    elif iconType == 'warning':
+        msgBox.setIcon(QtWidgets.QMessageBox.Warning)
+    else:
+        msgBox.setIcon(QtWidgets.QMessageBox.Critical)
+    #set the title
+    msgBox.setText(title)
+    #set the content
+    msgBox.setText(message)
+    msgBox.exec_()
+
+        
+def mainApplication():
+    app = QtWidgets.QApplication(sys.argv)
+    window = Ui()
+    app.exec_()
+    app.quit()
+    sys.exit(app.exec_())
+
+mainApplication()
