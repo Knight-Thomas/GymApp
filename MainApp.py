@@ -2,7 +2,9 @@
 import sqlite3 as sq
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 import sys
+import hashlib
 
+#connection tp database made
 conn = sq.connect('GymAppUsers.db')
 cur = conn.cursor()
 
@@ -24,19 +26,18 @@ class Ui(QtWidgets.QMainWindow):
         phone = self.PhoneNumberInput.text()
         username = self.UsernameInput.text()
         password = self.PasswordInput.text()
-        height = self.HeightInput.currentData()
+        height = self.HeightInput.currentText()
         age = self.AgeInput.value()
         weight = self.WeightInput.value()
-        #height = self.HeightInput()
-        #weight = self.WeightInput()
-        #age = self.AgeInput()
         if email =='' or phone =='' or username =='' or password =='':
             messageBoxHandler('Creation Failed','All Fields must be filled','warning')
         else:
             '''query to insert new account into database'''
             query = '''INSERT INTO Users (Username, Password, Email, Phone, CaloriesBurntD, CalorieIntakeD, WeightLiftedD, TimeSpentD, WorkoutW, WeightLiftedW, TimeSpentW, CaloriesBurntW, CalorieIntakeW, WorkoutsM, WeightLiftedM, TimeSpentM, CaloriesBurntM, CalorieIntakeM, WorkoutsY, WeightLiftedY, TimeSpentY, CaloriesBurntY, CalorieIntakeY, WorkoutsL, WeightLiftedL, TimeSpentL, CaloriesBurntL, CalorieIntakeL, Height, Age, Weight)
                     VALUES (?,?,?,?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,?,?,?)'''
-            cur.execute(query, (username, password, email, phone, height, age, weight))
+            passwordEncode = password.encode()
+            passwordHash = hashlib.sha256(passwordEncode).hexdigest()
+            cur.execute(query, (username, passwordHash, email, phone, height, age, weight))
             conn.commit()
             conn.close()
 
