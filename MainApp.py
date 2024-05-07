@@ -24,14 +24,21 @@ class Ui(QtWidgets.QMainWindow):
         phone = self.PhoneNumberInput.text()
         username = self.UsernameInput.text()
         password = self.PasswordInput.text()
-        height = self.HeightInput.num()
-        weight = self.WeightInput.num()
-        age = self.AgeInput.num()
+        height = self.HeightInput.currentData()
+        age = self.AgeInput.value()
+        weight = self.WeightInput.value()
+        #height = self.HeightInput()
+        #weight = self.WeightInput()
+        #age = self.AgeInput()
         if email =='' or phone =='' or username =='' or password =='':
             messageBoxHandler('Creation Failed','All Fields must be filled','warning')
         else:
             '''query to insert new account into database'''
-            print('success')
+            query = '''INSERT INTO Users (Username, Password, Email, Phone, CaloriesBurntD, CalorieIntakeD, WeightLiftedD, TimeSpentD, WorkoutW, WeightLiftedW, TimeSpentW, CaloriesBurntW, CalorieIntakeW, WorkoutsM, WeightLiftedM, TimeSpentM, CaloriesBurntM, CalorieIntakeM, WorkoutsY, WeightLiftedY, TimeSpentY, CaloriesBurntY, CalorieIntakeY, WorkoutsL, WeightLiftedL, TimeSpentL, CaloriesBurntL, CalorieIntakeL, Height, Age, Weight)
+                    VALUES (?,?,?,?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,?,?,?)'''
+            cur.execute(query, (username, password, email, phone, height, age, weight))
+            conn.commit()
+            conn.close()
 
 def messageBoxHandler(title, message, iconType='info'):
     '''this will display a dialogue message'''
