@@ -35,11 +35,20 @@ class Ui(QtWidgets.QMainWindow):
             '''query to insert new account into database'''
             query = '''INSERT INTO Users (Username, Password, Email, Phone, CaloriesBurntD, CalorieIntakeD, WeightLiftedD, TimeSpentD, WorkoutW, WeightLiftedW, TimeSpentW, CaloriesBurntW, CalorieIntakeW, WorkoutsM, WeightLiftedM, TimeSpentM, CaloriesBurntM, CalorieIntakeM, WorkoutsY, WeightLiftedY, TimeSpentY, CaloriesBurntY, CalorieIntakeY, WorkoutsL, WeightLiftedL, TimeSpentL, CaloriesBurntL, CalorieIntakeL, Height, Age, Weight)
                     VALUES (?,?,?,?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,?,?,?)'''
+            #hashing the password
             passwordEncode = password.encode()
             passwordHash = hashlib.sha256(passwordEncode).hexdigest()
+            #executing the query
             cur.execute(query, (username, passwordHash, email, phone, height, age, weight))
             conn.commit()
             conn.close()
+            self.destroy()
+            super(Ui, self).__init__()
+            uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
+            self.show()
+            
+            
+           
 
 def messageBoxHandler(title, message, iconType='info'):
     '''this will display a dialogue message'''
