@@ -31,6 +31,9 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardLeaderboardPage.ui', self)
+        self.FriendsButton.clicked.connect(self.friendsPage)
+        self.SettingsButton.clicked.connect(self.settingsPage)
+        self.MainPageButton.clicked.connect(self.mainPage)
         self.show()
 
     def friendsPage(self):
@@ -38,13 +41,19 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardFriendsPage.ui', self)
+        self.LeaderboardButton.clicked.connect(self.leaderboardPage)
+        self.SettingsButton.clicked.connect(self.settingsPage)
+        self.MainPageButton.clicked.connect(self.mainPage)
         self.show()
 
-    def  settingsPage(self):
+    def settingsPage(self):
         '''loads the settings page'''
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardSettingsPage.ui', self)
+        self.LeaderboardButton.clicked.connect(self.leaderboardPage)
+        self.FriendsButton.clicked.connect(self.friendsPage)
+        self.MainPageButton.clicked.connect(self.mainPage)
         self.show()
 
     

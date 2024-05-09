@@ -113,7 +113,7 @@ background:rgb(76, 76, 76)
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="MainPageButton">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -128,7 +128,7 @@ background:rgb(76, 76, 76)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton{
+     <string notr="true">QPushButton#MainPageButton{
 background:rgb(204, 255, 102, 0)
 }
 </string>
@@ -163,7 +163,7 @@ color:rgb(204, 255, 102)
      <string>L</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="FriendsButton">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -178,7 +178,7 @@ color:rgb(204, 255, 102)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_3{
+     <string notr="true">QPushButton#FriendsButton{
 background:rgb(102, 102, 102, 0)
 }</string>
     </property>
@@ -186,7 +186,7 @@ background:rgb(102, 102, 102, 0)
      <string>F</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="SettingsButton">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -201,7 +201,7 @@ background:rgb(102, 102, 102, 0)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_4{
+     <string notr="true">QPushButton#SettingsButton{
 background:rgba(102, 102, 102, 0)
 }</string>
     </property>
