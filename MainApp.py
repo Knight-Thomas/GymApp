@@ -20,6 +20,46 @@ class Ui(QtWidgets.QMainWindow):
         #self.AlreadyHaveAnAccount.clicked.connect(self.alreadyHaveAnAccount)
         self.show()
 
+    def workoutTracker(self):
+        ''''''
+
+    def calorieTracker(self):
+        '''loads the calorie tracker page'''
+
+    def leaderboardPage(self):
+        '''loads the leaderboard page'''
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardLeaderboardPage.ui', self)
+        self.show()
+
+    def friendsPage(self):
+        '''loads the friends page'''
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardFriendsPage.ui', self)
+        self.show()
+
+    def  settingsPage(self):
+        '''loads the settings page'''
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardSettingsPage.ui', self)
+        self.show()
+
+    
+    def mainPage(self):
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
+        #add even listeners
+        self.WorkoutTrackerButton.clicked.connect(self.workoutTracker)
+        self.CalorieTrackerButton.clicked.connect(self.calorieTracker)
+        self.LeaderboardButton.clicked.connect(self.leaderboardPage)
+        self.FriendsButton.clicked.connect(self.friendsPage)
+        self.SettingsButton.clicked.connect(self.settingsPage)
+        self.show()
+
     def logIn(self):
         '''Handles the log in button'''
         #access form line edits
@@ -36,10 +76,7 @@ class Ui(QtWidgets.QMainWindow):
             cur.execute(query, (username, passwordHash))
             conn.commit()
             conn.close()
-            self.destroy()
-            super(Ui, self).__init__()
-            uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
-            self.show()
+            self.mainPage()
     
     def logInPage(self):
         self.destroy()
@@ -72,10 +109,7 @@ class Ui(QtWidgets.QMainWindow):
             conn.close()
             #close the previous GUI window and load the next
             self.destroy()
-            super(Ui, self).__init__()
-            uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
-            #add event listeners
-            self.show()
+            self.mainPage()
 
     def createAccountPage(self):
         '''Create account button handler'''

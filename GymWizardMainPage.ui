@@ -139,7 +139,7 @@ color:rgb(204,255,102)
      <string>M</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="LeaderboardButton">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -154,7 +154,7 @@ color:rgb(204,255,102)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_2{
+     <string notr="true">QPushButton#LeaderboardButton{
 background:rgb(102, 102, 102, 0)
 }</string>
     </property>
@@ -162,7 +162,7 @@ background:rgb(102, 102, 102, 0)
      <string>L</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="FriendsButton">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -177,7 +177,7 @@ background:rgb(102, 102, 102, 0)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_3{
+     <string notr="true">QPushButton#FriendsButton{
 background:rgb(102, 102, 102, 0)
 }</string>
     </property>
@@ -185,7 +185,7 @@ background:rgb(102, 102, 102, 0)
      <string>F</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="SettingsButton">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -200,7 +200,7 @@ background:rgb(102, 102, 102, 0)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_4{
+     <string notr="true">QPushButton#SettingsButton{
 background:rgba(102, 102, 102, 0)
 }</string>
     </property>
@@ -280,7 +280,7 @@ background:rgb(76, 76, 76)
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="WorkoutTrackerButton">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -298,10 +298,10 @@ background:rgb(76, 76, 76)
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_5{
-background:rgb(102, 102, 102, 0)
+     <string notr="true">QPushButton#WorkoutTrackerButton{
+background:rgb(51, 51, 51,0)
 }
-QPushButton#pushButton_5{
+QPushButton#WorkoutTrackerButton{
 color:rgb(204, 255, 102)
 }</string>
     </property>
@@ -309,7 +309,7 @@ color:rgb(204, 255, 102)
      <string>Workout</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="CalorieTrackerButton">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -324,10 +324,10 @@ color:rgb(204, 255, 102)
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_6{
+     <string notr="true">QPushButton#CalorieTrackerButton{
 background:rgb(0,0,0,0)
 }
-QPushButton#pushButton_6{
+QPushButton#CalorieTrackerButton{
 color:rgb(204, 255, 102)
 }</string>
     </property>
