@@ -103,6 +103,7 @@ class Ui(QtWidgets.QMainWindow):
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardLogInPage.ui', self)
         self.LogInButton.clicked.connect(self.logIn)
+        self.DontHaveAnAccountButton.clicked.connect(self.createAccountPage)
         self.show()    
 
     def createAccount(self):
