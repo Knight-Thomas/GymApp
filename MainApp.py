@@ -13,14 +13,42 @@ class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         '''constructor method'''
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardCreateAccount.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardLogInPage.ui', self)
         #add event listeners here
-        self.CreateAccount.clicked.connect(self.createAccount)
+        self.DontHaveAnAccountButton.clicked.connect(self.createAccountPage)
+        self.LogInButton.clicked.connect(self.logIn)
         #self.AlreadyHaveAnAccount.clicked.connect(self.alreadyHaveAnAccount)
         self.show()
 
+    def logIn(self):
+        '''Handles the log in button'''
+        #access form line edits
+        username = self.UsernameInput.text()
+        password = self.PasswordInput.text()
+        if username =='' or password =='':
+            messageBoxHandler('Log In Failed','All Fields Must Be Filled','warning')
+        else:
+            #creates a query to check to see if the inputs given match an account thats already in the database 
+            query ="""SELECT * FROM Users
+                    WHERE Username=? AND Password =?"""
+            passwordEncode = password.encode()
+            passwordHash = hashlib.sha256(passwordEncode).hexdigest()
+            cur.execute(query, (username, passwordHash))
+            conn.commit()
+            conn.close()
+            self.destroy()
+            super(Ui, self).__init__()
+            uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
+            self.show()
+    
+    def logInPage(self):
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardLogInPage.ui', self)
+        self.LogInButton.clicked.connect(self.logIn)
+        self.show()    
+
     def createAccount(self):
-        '''Create account button handler'''
         #access form line edits
         email = self.EmailInput.text()
         phone = self.PhoneNumberInput.text()
@@ -30,7 +58,7 @@ class Ui(QtWidgets.QMainWindow):
         age = self.AgeInput.value()
         weight = self.WeightInput.value()
         if email =='' or phone =='' or username =='' or password =='':
-            messageBoxHandler('Creation Failed','All Fields must be filled','warning')
+            messageBoxHandler('Creation Failed','All Fields Must Be Filled','warning')
         else:
             '''query to insert new account into database'''
             query = '''INSERT INTO Users (Username, Password, Email, Phone, CaloriesBurntD, CalorieIntakeD, WeightLiftedD, TimeSpentD, WorkoutW, WeightLiftedW, TimeSpentW, CaloriesBurntW, CalorieIntakeW, WorkoutsM, WeightLiftedM, TimeSpentM, CaloriesBurntM, CalorieIntakeM, WorkoutsY, WeightLiftedY, TimeSpentY, CaloriesBurntY, CalorieIntakeY, WorkoutsL, WeightLiftedL, TimeSpentL, CaloriesBurntL, CalorieIntakeL, Height, Age, Weight)
@@ -42,13 +70,21 @@ class Ui(QtWidgets.QMainWindow):
             cur.execute(query, (username, passwordHash, email, phone, height, age, weight))
             conn.commit()
             conn.close()
+            #close the previous GUI window and load the next
             self.destroy()
             super(Ui, self).__init__()
             uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
+            #add event listeners
             self.show()
-            
-            
-           
+
+    def createAccountPage(self):
+        '''Create account button handler'''
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardCreateAccount.ui', self)
+        self.CreateAccount.clicked.connect(self.createAccount)
+        self.AlreadyHaveAnAccount.clicked.connect(self.logInPage)
+        self.show()    
 
 def messageBoxHandler(title, message, iconType='info'):
     '''this will display a dialogue message'''
