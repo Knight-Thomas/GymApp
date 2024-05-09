@@ -296,7 +296,7 @@ background:rgb(76, 76, 76)
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GyWizardLogo.png</pixmap>
+     <pixmap>GymWizardLogo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

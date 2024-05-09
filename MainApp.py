@@ -9,7 +9,7 @@ conn = sq.connect('GymAppUsers.db')
 cur = conn.cursor()
 
 class Ui(QtWidgets.QMainWindow):
-    '''This is a window class based om the xml code in the login ui'''
+    '''This is a window class based om the xml code in the .ui files'''
     def __init__(self):
         '''constructor method'''
         super(Ui, self).__init__()
@@ -93,7 +93,7 @@ class Ui(QtWidgets.QMainWindow):
                     WHERE Username=? AND Password =?"""
             passwordEncode = password.encode()
             passwordHash = hashlib.sha256(passwordEncode).hexdigest()
-            cur.execute(query, (username, passwordHash))
+            TorF = cur.execute(query, (username, passwordHash))
             conn.commit()
             conn.close()
             self.mainPage()

@@ -620,6 +620,9 @@ background:rgb(76, 76, 76)
     <property name="frame">
      <bool>false</bool>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
     <property name="readOnly">
      <bool>false</bool>
     </property>
@@ -673,7 +676,7 @@ background:rgb(76, 76, 76)
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GyWizardLogo.png</pixmap>
+     <pixmap>GymWizardLogo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

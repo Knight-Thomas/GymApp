@@ -731,7 +731,7 @@ color:rgb(230, 230, 230)
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GyWizardLogo.png</pixmap>
+     <pixmap>GymWizardLogo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
