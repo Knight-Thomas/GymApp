@@ -25,6 +25,7 @@
   <property name="font">
    <font>
     <pointsize>13</pointsize>
+    <strikeout>false</strikeout>
    </font>
   </property>
   <property name="windowTitle">
@@ -230,16 +231,6 @@ color:rgb(204, 255, 102)
     </property>
     <property name="text">
      <string>𝔾𝕪𝕞 𝕎𝕚𝕫𝕒𝕣𝕕</string>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>350</y>
-      <width>121</width>
-      <height>161</height>
-     </rect>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -614,7 +605,7 @@ background:rgb(76, 76, 76)
     </property>
     <property name="font">
      <font>
-      <strikeout>true</strikeout>
+      <strikeout>false</strikeout>
      </font>
     </property>
     <property name="toolTipDuration">
@@ -661,6 +652,31 @@ background:rgb(76, 76, 76)
       <width>191</width>
       <height>31</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777211</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>GyWizardLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

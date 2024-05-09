@@ -17,15 +17,26 @@ class Ui(QtWidgets.QMainWindow):
         #add event listeners here
         self.DontHaveAnAccountButton.clicked.connect(self.createAccountPage)
         self.LogInButton.clicked.connect(self.logIn)
+        
         #self.AlreadyHaveAnAccount.clicked.connect(self.alreadyHaveAnAccount)
         self.show()
 
     def workoutTracker(self):
-        ''''''
+        '''loads the workout tracker page'''
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardWorkoutTracker.ui', self)
+        self.BackButton.clicked.connect(self.mainPage)
+        self.show()
 
     def calorieTracker(self):
         '''loads the calorie tracker page'''
-
+        self.destroy()
+        super(Ui, self).__init__()
+        uic.loadUi('/Users/tomknight/GymApp/GymWizardCalorieTracker.ui', self)
+        self.BackButton.clicked.connect(self.mainPage)
+        self.show()
+        
     def leaderboardPage(self):
         '''loads the leaderboard page'''
         self.destroy()
