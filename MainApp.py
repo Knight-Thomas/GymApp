@@ -90,13 +90,17 @@ class Ui(QtWidgets.QMainWindow):
         else:
             #creates a query to check to see if the inputs given match an account thats already in the database 
             query ="""SELECT * FROM Users
-                    WHERE Username=? AND Password =?"""
+                    WHERE EXISTS
+                    (SELECT * FROM Users WHERE Username=? AND Password=?)"""
             passwordEncode = password.encode()
             passwordHash = hashlib.sha256(passwordEncode).hexdigest()
-            TorF = cur.execute(query, (username, passwordHash))
+            cur.execute(query, (username, passwordHash))
+            TorF = cur.fetchone()
+            if TorF:
+                self.mainPage()
+            else:
+                messageBoxHandler('Log In Failed', 'Incorrect Username or Password', 'warning')
             conn.commit()
-            conn.close()
-            self.mainPage()
     
     def logInPage(self):
         self.destroy()
@@ -127,7 +131,6 @@ class Ui(QtWidgets.QMainWindow):
             #executing the query
             cur.execute(query, (username, passwordHash, email, phone, height, age, weight))
             conn.commit()
-            conn.close()
             #close the previous GUI window and load the next
             self.destroy()
             self.mainPage()
@@ -168,3 +171,4 @@ def mainApplication():
     sys.exit(app.exec_())
 
 mainApplication()
+conn.close()
