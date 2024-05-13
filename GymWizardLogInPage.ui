@@ -244,10 +244,10 @@ background:rgb(76, 76, 76)
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>420</y>
-      <width>221</width>
-      <height>171</height>
+      <x>70</x>
+      <y>410</y>
+      <width>251</width>
+      <height>181</height>
      </rect>
     </property>
     <property name="text">

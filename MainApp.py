@@ -4,7 +4,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, uic
 import sys
 import hashlib
 
-#connection tp database made
+#connection to database made
 conn = sq.connect('GymAppUsers.db')
 cur = conn.cursor()
 
@@ -17,8 +17,6 @@ class Ui(QtWidgets.QMainWindow):
         #add event listeners here
         self.DontHaveAnAccountButton.clicked.connect(self.createAccountPage)
         self.LogInButton.clicked.connect(self.logIn)
-        
-        #self.AlreadyHaveAnAccount.clicked.connect(self.alreadyHaveAnAccount)
         self.show()
 
     def workoutTracker(self):
@@ -26,6 +24,7 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardWorkoutTracker.ui', self)
+        #add event listeners
         self.BackButton.clicked.connect(self.mainPage)
         self.show()
 
@@ -34,6 +33,7 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardCalorieTracker.ui', self)
+        #add event listeners
         self.BackButton.clicked.connect(self.mainPage)
         self.show()
         
@@ -42,6 +42,7 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardLeaderboardPage.ui', self)
+        #add event listeners
         self.FriendsButton.clicked.connect(self.friendsPage)
         self.SettingsButton.clicked.connect(self.settingsPage)
         self.MainPageButton.clicked.connect(self.mainPage)
@@ -52,6 +53,7 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardFriendsPage.ui', self)
+        #add even listeners
         self.LeaderboardButton.clicked.connect(self.leaderboardPage)
         self.SettingsButton.clicked.connect(self.settingsPage)
         self.MainPageButton.clicked.connect(self.mainPage)
@@ -62,6 +64,7 @@ class Ui(QtWidgets.QMainWindow):
         self.destroy()
         super(Ui, self).__init__()
         uic.loadUi('/Users/tomknight/GymApp/GymWizardSettingsPage.ui', self)
+        #add event listeners
         self.LeaderboardButton.clicked.connect(self.leaderboardPage)
         self.FriendsButton.clicked.connect(self.friendsPage)
         self.MainPageButton.clicked.connect(self.mainPage)
@@ -101,6 +104,7 @@ class Ui(QtWidgets.QMainWindow):
             else:
                 messageBoxHandler('Log In Failed', 'Incorrect Username or Password', 'warning')
             conn.commit()
+            return username,password
     
     def logInPage(self):
         self.destroy()
@@ -134,6 +138,7 @@ class Ui(QtWidgets.QMainWindow):
             #close the previous GUI window and load the next
             self.destroy()
             self.mainPage()
+            return username, password
 
     def createAccountPage(self):
         '''Create account button handler'''
