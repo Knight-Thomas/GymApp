@@ -215,7 +215,7 @@ color:rgb(230, 230, 230)
       <x>40</x>
       <y>0</y>
       <width>311</width>
-      <height>71</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -230,7 +230,13 @@ color:rgb(204, 255, 102)
 </string>
     </property>
     <property name="text">
-     <string>𝔾𝕪𝕞 𝕎𝕚𝕫𝕒𝕣𝕕</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>GymHexTopperLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -676,7 +682,7 @@ background:rgb(76, 76, 76)
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GymWizardLogo.png</pixmap>
+     <pixmap>GymHexMainLogo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

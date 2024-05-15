@@ -10,16 +10,17 @@
     <height>667</height>
    </rect>
   </property>
-  <property name="maximumSize">
+  <property name="minimumSize">
    <size>
     <width>375</width>
     <height>667</height>
    </size>
   </property>
-  <property name="font">
-   <font>
-    <pointsize>17</pointsize>
-   </font>
+  <property name="maximumSize">
+   <size>
+    <width>375</width>
+    <height>667</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -30,42 +31,144 @@ background:rgb(51, 51, 51)
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="UsernameInput">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PasswordInput">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>290</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LogInButton">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>340</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Log in</string>
+    </property>
+   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>70</x>
+      <y>150</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label{
+color:rgb(230, 230, 230)
+}</string>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label_2{
+color:rgb(230, 230, 230)
+}</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
       <y>0</y>
-      <width>181</width>
-      <height>41</height>
+      <width>311</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="maximumSize">
      <size>
-      <width>16777203</width>
+      <width>16777198</width>
       <height>16777215</height>
      </size>
     </property>
     <property name="font">
      <font>
-      <pointsize>30</pointsize>
+      <pointsize>53</pointsize>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QLabel#label{
+     <string notr="true">QLabel#label_4{
 color:rgb(204, 255, 102)
-}</string>
+}
+</string>
     </property>
     <property name="text">
-     <string>𝔾𝕪𝕞 𝕎𝕚𝕫𝕒𝕣𝕕</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>GymHexTopperLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>600</y>
-      <width>3</width>
-      <height>61</height>
+      <x>0</x>
+      <y>90</y>
+      <width>118</width>
+      <height>3</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -74,16 +177,16 @@ background:rgb(76, 76, 76)
 }</string>
     </property>
     <property name="orientation">
-     <enum>Qt::Vertical</enum>
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>600</y>
-      <width>3</width>
-      <height>61</height>
+      <x>110</x>
+      <y>90</y>
+      <width>118</width>
+      <height>3</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -92,130 +195,14 @@ background:rgb(76, 76, 76)
 }</string>
     </property>
     <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_4">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>600</y>
-      <width>3</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">Line#line_4{
-background:rgb(76, 76, 76)
-}</string>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="MainPageButton">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>610</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#MainPageButton{
-background:rgb(204, 255, 102, 0)
-}
-</string>
-    </property>
-    <property name="text">
-     <string>M</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="LeaderboardButton">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>610</y>
-      <width>41</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#LeaderboardButton{
-background:rgb(102, 102, 102, 0)
-}
-</string>
-    </property>
-    <property name="text">
-     <string>L</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="FriendsButton">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>610</y>
-      <width>41</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#FriendsButton{
-background:rgb(102, 102, 102, 0)
-}
-</string>
-    </property>
-    <property name="text">
-     <string>F</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>610</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton_4{
-background:rgba(102, 102, 102, 0)
-}
-QPushButton#pushButton_4{
-color:rgb(204, 255, 102)
-}</string>
-    </property>
-    <property name="text">
-     <string>S</string>
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
    <widget class="Line" name="line_3">
     <property name="geometry">
      <rect>
-      <x>-10</x>
-      <y>50</y>
+      <x>220</x>
+      <y>90</y>
       <width>118</width>
       <height>3</height>
      </rect>
@@ -229,53 +216,17 @@ background:rgb(76, 76, 76)
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="Line" name="line_5">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>50</y>
-      <width>118</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">Line#line_5{
-background:rgb(76, 76, 76)
-}</string>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_6">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>50</y>
-      <width>118</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">Line#line_6{
-background:rgb(76, 76, 76)
-}</string>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_7">
+   <widget class="Line" name="line_4">
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>50</y>
+      <y>90</y>
       <width>118</width>
       <height>3</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">Line#line_7{
+     <string notr="true">Line#line_4{
 background:rgb(76, 76, 76)
 }</string>
     </property>
@@ -283,20 +234,42 @@ background:rgb(76, 76, 76)
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QPushButton" name="DontHaveAnAccountButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>51</width>
-      <height>41</height>
+      <x>102</x>
+      <y>370</y>
+      <width>181</width>
+      <height>32</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>Don't have an account? </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>400</y>
+      <width>291</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777188</height>
+     </size>
+    </property>
+    <property name="midLineWidth">
+     <number>-10</number>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GymWizardLogo.png</pixmap>
+     <pixmap>GymHexMainLogo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

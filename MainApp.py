@@ -13,17 +13,20 @@ class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         '''constructor method'''
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardLogInPage.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexLogInPage.ui', self)
         #add event listeners here
         self.DontHaveAnAccountButton.clicked.connect(self.createAccountPage)
         self.LogInButton.clicked.connect(self.logIn)
         self.show()
+    
+    def leaderboard(self):
+        '''displays the leaderboard on the leaderboard page'''
 
     def workoutTracker(self):
         '''loads the workout tracker page'''
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardWorkoutTracker.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexWorkoutTracker.ui', self)
         #add event listeners
         self.BackButton.clicked.connect(self.mainPage)
         self.show()
@@ -32,7 +35,7 @@ class Ui(QtWidgets.QMainWindow):
         '''loads the calorie tracker page'''
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardCalorieTracker.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexCalorieTracker.ui', self)
         #add event listeners
         self.BackButton.clicked.connect(self.mainPage)
         self.show()
@@ -41,7 +44,7 @@ class Ui(QtWidgets.QMainWindow):
         '''loads the leaderboard page'''
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardLeaderboardPage.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexLeaderboardPage.ui', self)
         #add event listeners
         self.FriendsButton.clicked.connect(self.friendsPage)
         self.SettingsButton.clicked.connect(self.settingsPage)
@@ -52,7 +55,7 @@ class Ui(QtWidgets.QMainWindow):
         '''loads the friends page'''
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardFriendsPage.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexFriendsPage.ui', self)
         #add even listeners
         self.LeaderboardButton.clicked.connect(self.leaderboardPage)
         self.SettingsButton.clicked.connect(self.settingsPage)
@@ -63,7 +66,7 @@ class Ui(QtWidgets.QMainWindow):
         '''loads the settings page'''
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardSettingsPage.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexSettingsPage.ui', self)
         #add event listeners
         self.LeaderboardButton.clicked.connect(self.leaderboardPage)
         self.FriendsButton.clicked.connect(self.friendsPage)
@@ -74,7 +77,7 @@ class Ui(QtWidgets.QMainWindow):
     def mainPage(self):
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardMainPage.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexMainPage.ui', self)
         #add even listeners
         self.WorkoutTrackerButton.clicked.connect(self.workoutTracker)
         self.CalorieTrackerButton.clicked.connect(self.calorieTracker)
@@ -109,7 +112,7 @@ class Ui(QtWidgets.QMainWindow):
     def logInPage(self):
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardLogInPage.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexLogInPage.ui', self)
         self.LogInButton.clicked.connect(self.logIn)
         self.DontHaveAnAccountButton.clicked.connect(self.createAccountPage)
         self.show()    
@@ -144,7 +147,7 @@ class Ui(QtWidgets.QMainWindow):
         '''Create account button handler'''
         self.destroy()
         super(Ui, self).__init__()
-        uic.loadUi('/Users/tomknight/GymApp/GymWizardCreateAccount.ui', self)
+        uic.loadUi('/Users/tomknight/GymApp/GymHexCreateAccount.ui', self)
         self.CreateAccount.clicked.connect(self.createAccount)
         self.AlreadyHaveAnAccount.clicked.connect(self.logInPage)
         self.show()    

@@ -33,10 +33,10 @@ background:rgb(51, 51, 51)
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>0</y>
-      <width>181</width>
-      <height>41</height>
+      <x>60</x>
+      <y>-10</y>
+      <width>261</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -56,7 +56,13 @@ color:rgb(204, 255, 102)
 }</string>
     </property>
     <property name="text">
-     <string>𝔾𝕪𝕞 𝕎𝕚𝕫𝕒𝕣𝕕</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>GymHexTopperLogo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -116,10 +122,10 @@ background:rgb(76, 76, 76)
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>610</y>
-      <width>31</width>
-      <height>31</height>
+      <x>0</x>
+      <y>600</y>
+      <width>91</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -136,16 +142,29 @@ color:rgb(204,255,102)
 }</string>
     </property>
     <property name="text">
-     <string>M</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>GymHexMainPageIconActivated.png</normaloff>GymHexMainPageIconActivated.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>302</number>
     </property>
    </widget>
    <widget class="QPushButton" name="LeaderboardButton">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>610</y>
-      <width>41</width>
-      <height>31</height>
+      <x>90</x>
+      <y>600</y>
+      <width>101</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -159,16 +178,26 @@ background:rgb(102, 102, 102, 0)
 }</string>
     </property>
     <property name="text">
-     <string>L</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>GymHexLeaderboardIconDeactivated.png</normaloff>GymHexLeaderboardIconDeactivated.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="FriendsButton">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>610</y>
-      <width>41</width>
-      <height>31</height>
+      <x>190</x>
+      <y>600</y>
+      <width>101</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -182,16 +211,26 @@ background:rgb(102, 102, 102, 0)
 }</string>
     </property>
     <property name="text">
-     <string>F</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>GymHexFriendsIconDeactivated.png</normaloff>GymHexFriendsIconDeactivated.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="SettingsButton">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>610</y>
-      <width>31</width>
-      <height>31</height>
+      <x>290</x>
+      <y>600</y>
+      <width>81</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -205,7 +244,17 @@ background:rgba(102, 102, 102, 0)
 }</string>
     </property>
     <property name="text">
-     <string>S</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>GymHexSettingsIconDeactivated.png</normaloff>GymHexSettingsIconDeactivated.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
    <widget class="Line" name="line_3">
@@ -717,25 +766,6 @@ color:rgb(230, 230, 230)
       <string>Lifetime</string>
      </property>
     </item>
-   </widget>
-   <widget class="QLabel" name="label_8">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>GymWizardLogo.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
