@@ -3,6 +3,9 @@ import sqlite3 as sq
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 import sys
 import hashlib
+import objc
+import PyObjCTools
+import HealthKit
 
 #connection to database made
 conn = sq.connect('GymAppUsers.db')
