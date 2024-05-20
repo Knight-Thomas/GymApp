@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */; };
+		8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2432BFB5D4700C54716 /* ContentView.swift */; };
+		8D90A2462BFB5D4700C54716 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2452BFB5D4700C54716 /* Item.swift */; };
+		8D90A2482BFB5D4900C54716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90A2472BFB5D4900C54716 /* Assets.xcassets */; };
+		8D90A24B2BFB5D4900C54716 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D90A24A2BFB5D4900C54716 /* Preview Assets.xcassets */; };
+		8D90A2552BFB5D4900C54716 /* GymHexSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2542BFB5D4900C54716 /* GymHexSwiftUITests.swift */; };
+		8D90A25F2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */; };
+		8D90A2612BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D90A2512BFB5D4900C54716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D90A2362BFB5D4700C54716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D90A23D2BFB5D4700C54716;
+			remoteInfo = GymHexSwiftUI;
+		};
+		8D90A25B2BFB5D4900C54716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D90A2362BFB5D4700C54716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D90A23D2BFB5D4700C54716;
+			remoteInfo = GymHexSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D90A23E2BFB5D4700C54716 /* GymHexSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymHexSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIApp.swift; sourceTree = "<group>"; };
+		8D90A2432BFB5D4700C54716 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D90A2452BFB5D4700C54716 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8D90A2472BFB5D4900C54716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D90A24A2BFB5D4900C54716 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D90A2502BFB5D4900C54716 /* GymHexSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymHexSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D90A2542BFB5D4900C54716 /* GymHexSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUITests.swift; sourceTree = "<group>"; };
+		8D90A25A2BFB5D4900C54716 /* GymHexSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymHexSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITests.swift; sourceTree = "<group>"; };
+		8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D90A23B2BFB5D4700C54716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D90A24D2BFB5D4900C54716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D90A2572BFB5D4900C54716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D90A2352BFB5D4700C54716 = {
+			isa = PBXGroup;
+			children = (
+				8D90A2402BFB5D4700C54716 /* GymHexSwiftUI */,
+				8D90A2532BFB5D4900C54716 /* GymHexSwiftUITests */,
+				8D90A25D2BFB5D4900C54716 /* GymHexSwiftUIUITests */,
+				8D90A23F2BFB5D4700C54716 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D90A23F2BFB5D4700C54716 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D90A23E2BFB5D4700C54716 /* GymHexSwiftUI.app */,
+				8D90A2502BFB5D4900C54716 /* GymHexSwiftUITests.xctest */,
+				8D90A25A2BFB5D4900C54716 /* GymHexSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D90A2402BFB5D4700C54716 /* GymHexSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */,
+				8D90A2432BFB5D4700C54716 /* ContentView.swift */,
+				8D90A2452BFB5D4700C54716 /* Item.swift */,
+				8D90A2472BFB5D4900C54716 /* Assets.xcassets */,
+				8D90A2492BFB5D4900C54716 /* Preview Content */,
+			);
+			path = GymHexSwiftUI;
+			sourceTree = "<group>";
+		};
+		8D90A2492BFB5D4900C54716 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8D90A24A2BFB5D4900C54716 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D90A2532BFB5D4900C54716 /* GymHexSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D90A2542BFB5D4900C54716 /* GymHexSwiftUITests.swift */,
+			);
+			path = GymHexSwiftUITests;
+			sourceTree = "<group>";
+		};
+		8D90A25D2BFB5D4900C54716 /* GymHexSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */,
+				8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = GymHexSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D90A23D2BFB5D4700C54716 /* GymHexSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D90A2642BFB5D4900C54716 /* Build configuration list for PBXNativeTarget "GymHexSwiftUI" */;
+			buildPhases = (
+				8D90A23A2BFB5D4700C54716 /* Sources */,
+				8D90A23B2BFB5D4700C54716 /* Frameworks */,
+				8D90A23C2BFB5D4700C54716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymHexSwiftUI;
+			productName = GymHexSwiftUI;
+			productReference = 8D90A23E2BFB5D4700C54716 /* GymHexSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D90A24F2BFB5D4900C54716 /* GymHexSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D90A2672BFB5D4900C54716 /* Build configuration list for PBXNativeTarget "GymHexSwiftUITests" */;
+			buildPhases = (
+				8D90A24C2BFB5D4900C54716 /* Sources */,
+				8D90A24D2BFB5D4900C54716 /* Frameworks */,
+				8D90A24E2BFB5D4900C54716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D90A2522BFB5D4900C54716 /* PBXTargetDependency */,
+			);
+			name = GymHexSwiftUITests;
+			productName = GymHexSwiftUITests;
+			productReference = 8D90A2502BFB5D4900C54716 /* GymHexSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D90A2592BFB5D4900C54716 /* GymHexSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D90A26A2BFB5D4900C54716 /* Build configuration list for PBXNativeTarget "GymHexSwiftUIUITests" */;
+			buildPhases = (
+				8D90A2562BFB5D4900C54716 /* Sources */,
+				8D90A2572BFB5D4900C54716 /* Frameworks */,
+				8D90A2582BFB5D4900C54716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D90A25C2BFB5D4900C54716 /* PBXTargetDependency */,
+			);
+			name = GymHexSwiftUIUITests;
+			productName = GymHexSwiftUIUITests;
+			productReference = 8D90A25A2BFB5D4900C54716 /* GymHexSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D90A2362BFB5D4700C54716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8D90A23D2BFB5D4700C54716 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					8D90A24F2BFB5D4900C54716 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8D90A23D2BFB5D4700C54716;
+					};
+					8D90A2592BFB5D4900C54716 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8D90A23D2BFB5D4700C54716;
+					};
+				};
+			};
+			buildConfigurationList = 8D90A2392BFB5D4700C54716 /* Build configuration list for PBXProject "GymHexSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D90A2352BFB5D4700C54716;
+			productRefGroup = 8D90A23F2BFB5D4700C54716 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D90A23D2BFB5D4700C54716 /* GymHexSwiftUI */,
+				8D90A24F2BFB5D4900C54716 /* GymHexSwiftUITests */,
+				8D90A2592BFB5D4900C54716 /* GymHexSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D90A23C2BFB5D4700C54716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D90A24B2BFB5D4900C54716 /* Preview Assets.xcassets in Resources */,
+				8D90A2482BFB5D4900C54716 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D90A24E2BFB5D4900C54716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D90A2582BFB5D4900C54716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D90A23A2BFB5D4700C54716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */,
+				8D90A2462BFB5D4700C54716 /* Item.swift in Sources */,
+				8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D90A24C2BFB5D4900C54716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D90A2552BFB5D4900C54716 /* GymHexSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D90A2562BFB5D4900C54716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D90A2612BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift in Sources */,
+				8D90A25F2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D90A2522BFB5D4900C54716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D90A23D2BFB5D4700C54716 /* GymHexSwiftUI */;
+			targetProxy = 8D90A2512BFB5D4900C54716 /* PBXContainerItemProxy */;
+		};
+		8D90A25C2BFB5D4900C54716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D90A23D2BFB5D4700C54716 /* GymHexSwiftUI */;
+			targetProxy = 8D90A25B2BFB5D4900C54716 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8D90A2622BFB5D4900C54716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D90A2632BFB5D4900C54716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D90A2652BFB5D4900C54716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymHexSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ku.oc.xehmyg.GymHexSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D90A2662BFB5D4900C54716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymHexSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ku.oc.xehmyg.GymHexSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D90A2682BFB5D4900C54716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ku.oc.xehmyg.GymHexSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymHexSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymHexSwiftUI";
+			};
+			name = Debug;
+		};
+		8D90A2692BFB5D4900C54716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ku.oc.xehmyg.GymHexSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymHexSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GymHexSwiftUI";
+			};
+			name = Release;
+		};
+		8D90A26B2BFB5D4900C54716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ku.oc.xehmyg.GymHexSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymHexSwiftUI;
+			};
+			name = Debug;
+		};
+		8D90A26C2BFB5D4900C54716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ku.oc.xehmyg.GymHexSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymHexSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D90A2392BFB5D4700C54716 /* Build configuration list for PBXProject "GymHexSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D90A2622BFB5D4900C54716 /* Debug */,
+				8D90A2632BFB5D4900C54716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D90A2642BFB5D4900C54716 /* Build configuration list for PBXNativeTarget "GymHexSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D90A2652BFB5D4900C54716 /* Debug */,
+				8D90A2662BFB5D4900C54716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D90A2672BFB5D4900C54716 /* Build configuration list for PBXNativeTarget "GymHexSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D90A2682BFB5D4900C54716 /* Debug */,
+				8D90A2692BFB5D4900C54716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D90A26A2BFB5D4900C54716 /* Build configuration list for PBXNativeTarget "GymHexSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D90A26B2BFB5D4900C54716 /* Debug */,
+				8D90A26C2BFB5D4900C54716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D90A2362BFB5D4700C54716 /* Project object */;
+}
