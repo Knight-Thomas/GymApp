@@ -15,6 +15,7 @@
 		8D90A2552BFB5D4900C54716 /* GymHexSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2542BFB5D4900C54716 /* GymHexSwiftUITests.swift */; };
 		8D90A25F2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */; };
 		8D90A2612BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */; };
+		8D90A26E2BFB602C00C54716 /* GymHexLogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		8D90A25A2BFB5D4900C54716 /* GymHexSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymHexSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITests.swift; sourceTree = "<group>"; };
 		8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexLogInPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */,
 				8D90A2432BFB5D4700C54716 /* ContentView.swift */,
+				8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */,
 				8D90A2452BFB5D4700C54716 /* Item.swift */,
 				8D90A2472BFB5D4900C54716 /* Assets.xcassets */,
 				8D90A2492BFB5D4900C54716 /* Preview Content */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D90A26E2BFB602C00C54716 /* GymHexLogInPage.swift in Sources */,
 				8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */,
 				8D90A2462BFB5D4700C54716 /* Item.swift in Sources */,
 				8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */,
