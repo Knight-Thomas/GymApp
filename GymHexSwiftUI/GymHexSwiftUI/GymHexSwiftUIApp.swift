@@ -30,3 +30,4 @@ struct GymHexSwiftUIApp: App {
         .modelContainer(sharedModelContainer)
     }
 }
+

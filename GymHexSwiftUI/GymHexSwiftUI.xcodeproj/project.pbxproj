@@ -17,7 +17,10 @@
 		8D90A2612BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */; };
 		8D90A26E2BFB602C00C54716 /* GymHexLogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */; };
 		8D90A2722BFB6C9A00C54716 /* GymHexCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */; };
+		8DA6FB0B2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */; };
 		8DFBEB3A2BFBC66C00583877 /* GymHexMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */; };
+		8DFBEB3C2BFBFB6400583877 /* GymHexLeaderboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */; };
+		8DFBEB3E2BFBFE2D00583877 /* GymHexFriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBEB3D2BFBFE2D00583877 /* GymHexFriendsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,10 @@
 		8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexLogInPage.swift; sourceTree = "<group>"; };
 		8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexCreateAccount.swift; sourceTree = "<group>"; };
+		8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSettingsPage.swift; sourceTree = "<group>"; };
 		8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexMainPage.swift; sourceTree = "<group>"; };
+		8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexLeaderboardPage.swift; sourceTree = "<group>"; };
+		8DFBEB3D2BFBFE2D00583877 /* GymHexFriendsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexFriendsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +109,13 @@
 			isa = PBXGroup;
 			children = (
 				8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */,
+				8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */,
 				8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */,
 				8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */,
+				8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */,
+				8DFBEB3D2BFBFE2D00583877 /* GymHexFriendsPage.swift */,
+				8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */,
 				8D90A2432BFB5D4700C54716 /* ContentView.swift */,
-				8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */,
 				8D90A2452BFB5D4700C54716 /* Item.swift */,
 				8D90A2472BFB5D4900C54716 /* Assets.xcassets */,
 				8D90A2492BFB5D4900C54716 /* Preview Content */,
@@ -273,7 +282,10 @@
 				8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */,
 				8D90A2722BFB6C9A00C54716 /* GymHexCreateAccount.swift in Sources */,
 				8DFBEB3A2BFBC66C00583877 /* GymHexMainPage.swift in Sources */,
+				8DFBEB3E2BFBFE2D00583877 /* GymHexFriendsPage.swift in Sources */,
 				8D90A2462BFB5D4700C54716 /* Item.swift in Sources */,
+				8DA6FB0B2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift in Sources */,
+				8DFBEB3C2BFBFB6400583877 /* GymHexLeaderboardPage.swift in Sources */,
 				8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
