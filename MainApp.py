@@ -181,5 +181,6 @@ def mainApplication():
     app.quit()
     sys.exit(app.exec_())
 
+
 mainApplication()
 conn.close()

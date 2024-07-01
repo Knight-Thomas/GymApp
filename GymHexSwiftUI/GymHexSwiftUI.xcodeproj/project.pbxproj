@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D5F22462BFF44FE00567C50 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F22452BFF44FE00567C50 /* DBHelper.swift */; };
+		8D5F22482C0DEB9800567C50 /* GymHexWorkoutTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */; };
+		8D5F224C2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F224B2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift */; };
 		8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */; };
 		8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2432BFB5D4700C54716 /* ContentView.swift */; };
 		8D90A2462BFB5D4700C54716 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2452BFB5D4700C54716 /* Item.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D5F22452BFF44FE00567C50 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexWorkoutTracker.swift; sourceTree = "<group>"; };
+		8D5F224B2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexWorkoutImageTracker.swift; sourceTree = "<group>"; };
 		8D90A23E2BFB5D4700C54716 /* GymHexSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymHexSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIApp.swift; sourceTree = "<group>"; };
 		8D90A2432BFB5D4700C54716 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */,
 				8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */,
 				8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */,
+				8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */,
+				8D5F224B2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift */,
+				8D5F22452BFF44FE00567C50 /* DBHelper.swift */,
 				8DFBEB3D2BFBFE2D00583877 /* GymHexFriendsPage.swift */,
 				8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */,
 				8D90A2432BFB5D4700C54716 /* ContentView.swift */,
@@ -279,12 +288,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D90A26E2BFB602C00C54716 /* GymHexLogInPage.swift in Sources */,
+				8D5F22482C0DEB9800567C50 /* GymHexWorkoutTracker.swift in Sources */,
 				8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */,
 				8D90A2722BFB6C9A00C54716 /* GymHexCreateAccount.swift in Sources */,
 				8DFBEB3A2BFBC66C00583877 /* GymHexMainPage.swift in Sources */,
 				8DFBEB3E2BFBFE2D00583877 /* GymHexFriendsPage.swift in Sources */,
+				8D5F224C2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift in Sources */,
 				8D90A2462BFB5D4700C54716 /* Item.swift in Sources */,
 				8DA6FB0B2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift in Sources */,
+				8D5F22462BFF44FE00567C50 /* DBHelper.swift in Sources */,
 				8DFBEB3C2BFBFB6400583877 /* GymHexLeaderboardPage.swift in Sources */,
 				8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */,
 			);
@@ -452,6 +464,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GymHexSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GymHex;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,6 +494,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GymHexSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GymHex;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,4 +1,5 @@
 import SwiftUI
+import SQLite3
 
 struct GymHexLeaderboardPage: View {
     var body: some View {
@@ -86,7 +87,8 @@ struct LeaderboardView: View {
         Friend(name: "Alice", caloriesBurnt: 500, calorieintake: 2000, workouts: 5, weightLifted: 100),
         Friend(name: "Bob", caloriesBurnt: 300, calorieintake: 2500, workouts: 3, weightLifted: 150),
         Friend(name: "Charlie", caloriesBurnt: 450, calorieintake: 1800, workouts: 4, weightLifted: 200),
-        Friend(name: "Felix", caloriesBurnt: 0, calorieintake: 50000, workouts: 0, weightLifted: 0),
+        Friend(name: "Felix", caloriesBurnt: 0, calorieintake: 50000
+               , workouts: 0, weightLifted: 0),
         Friend(name: "Dave", caloriesBurnt: 600, calorieintake: 2100, workouts: 6, weightLifted: 180)
     ]
     
@@ -111,11 +113,11 @@ struct LeaderboardView: View {
                     Text("Workouts")
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundStyle(Color(red: 255/255, green: 51/255, blue: 153/255))
+                        .foregroundStyle(Color(red: 255/255, green: 51/255, blue: 51/255))
                     Text("Calories Burnt")
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundStyle(Color(red: 255/255, green: 0/255, blue: 255/255))
+                        .foregroundStyle(Color(red: 255/255, green: 255/255, blue: 102/255))
                     Text("Calorie Intake")
                         .bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
