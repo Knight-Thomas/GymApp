@@ -1,0 +1,83 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-TARGET:CodeScanner"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:CodeScanner"
+    },
+    {
+      "guid" : "PACKAGE-RESOURCE:CodeScanner"
+    },
+    {
+      "guid" : "bbfc220149841b970c5dfa84614779a95d81557fdc777962715a3635c562e3c5"
+    },
+    {
+      "guid" : "bbfc220149841b970c5dfa84614779a9cbbf3a459a1a6bc6b10a6e9b8df1388d"
+    },
+    {
+      "guid" : "bbfc220149841b970c5dfa84614779a90598932d80ed34601f2fe4019df8203a"
+    }
+  ],
+  "containerPath" : "/Users/tomknight/GymApp/GymHexSwiftUI/GymHexSwiftUI.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.5",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/tomknight/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/tomknight/Library/Developer/Xcode/DerivedData/GymHexSwiftUI-garuramjbwgtsgbaewbcgqxxgaaa/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/tomknight/Library/Developer/Xcode/DerivedData/GymHexSwiftUI-garuramjbwgtsgbaewbcgqxxgaaa/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.5",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/tomknight/Library/Developer/Xcode/DerivedData/GymHexSwiftUI-garuramjbwgtsgbaewbcgqxxgaaa/CodeCoverage/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "TARGET_DEVICE_IDENTIFIER" : "1B76B1F7-2080-4445-B90F-3DEA42B36FB6",
+          "TARGET_DEVICE_MODEL" : "iPhone16,1",
+          "TARGET_DEVICE_OS_VERSION" : "17.5",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

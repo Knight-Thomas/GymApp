@@ -1,0 +1,13 @@
+Target dependency graph (6 targets)
+Target 'GymHexSwiftUITests' in project 'GymHexSwiftUI'
+➜ Explicit dependency on target 'GymHexSwiftUI' in project 'GymHexSwiftUI'
+Target 'GymHexSwiftUIUITests' in project 'GymHexSwiftUI'
+➜ Explicit dependency on target 'GymHexSwiftUI' in project 'GymHexSwiftUI'
+Target 'GymHexSwiftUI' in project 'GymHexSwiftUI'
+➜ Explicit dependency on target 'CodeScanner' in project 'CodeScanner'
+Target 'CodeScanner' in project 'CodeScanner'
+➜ Explicit dependency on target 'CodeScanner' in project 'CodeScanner'
+➜ Explicit dependency on target 'CodeScanner_CodeScanner' in project 'CodeScanner'
+Target 'CodeScanner' in project 'CodeScanner'
+➜ Explicit dependency on target 'CodeScanner_CodeScanner' in project 'CodeScanner'
+Target 'CodeScanner_CodeScanner' in project 'CodeScanner' (no dependencies)

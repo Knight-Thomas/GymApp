@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		8D5F22462BFF44FE00567C50 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F22452BFF44FE00567C50 /* DBHelper.swift */; };
 		8D5F22482C0DEB9800567C50 /* GymHexWorkoutTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */; };
-		8D5F224C2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F224B2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift */; };
+		8D5F224E2C380A4400567C50 /* GymHexCalorieTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F224D2C380A4300567C50 /* GymHexCalorieTracker.swift */; };
+		8D5F22552C3BD9E000567C50 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 8D5F22542C3BD9E000567C50 /* CodeScanner */; };
 		8D90A2422BFB5D4700C54716 /* GymHexSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */; };
 		8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2432BFB5D4700C54716 /* ContentView.swift */; };
 		8D90A2462BFB5D4700C54716 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2452BFB5D4700C54716 /* Item.swift */; };
@@ -18,13 +19,26 @@
 		8D90A2552BFB5D4900C54716 /* GymHexSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2542BFB5D4900C54716 /* GymHexSwiftUITests.swift */; };
 		8D90A25F2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */; };
 		8D90A2612BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */; };
-		8D90A26E2BFB602C00C54716 /* GymHexLogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */; };
 		8D90A2722BFB6C9A00C54716 /* GymHexCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */; };
 		8DA6FB0B2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */; };
 		8DFBEB3A2BFBC66C00583877 /* GymHexMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */; };
 		8DFBEB3C2BFBFB6400583877 /* GymHexLeaderboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */; };
 		8DFBEB3E2BFBFE2D00583877 /* GymHexFriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBEB3D2BFBFE2D00583877 /* GymHexFriendsPage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		8D3525212C3E812F0045D73A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		8D90A2512BFB5D4900C54716 /* PBXContainerItemProxy */ = {
@@ -46,7 +60,8 @@
 /* Begin PBXFileReference section */
 		8D5F22452BFF44FE00567C50 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexWorkoutTracker.swift; sourceTree = "<group>"; };
-		8D5F224B2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexWorkoutImageTracker.swift; sourceTree = "<group>"; };
+		8D5F224D2C380A4300567C50 /* GymHexCalorieTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexCalorieTracker.swift; sourceTree = "<group>"; };
+		8D5F22512C3BD6DB00567C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D90A23E2BFB5D4700C54716 /* GymHexSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymHexSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIApp.swift; sourceTree = "<group>"; };
 		8D90A2432BFB5D4700C54716 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +73,6 @@
 		8D90A25A2BFB5D4900C54716 /* GymHexSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymHexSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D90A25E2BFB5D4900C54716 /* GymHexSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITests.swift; sourceTree = "<group>"; };
 		8D90A2602BFB5D4900C54716 /* GymHexSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexLogInPage.swift; sourceTree = "<group>"; };
 		8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexCreateAccount.swift; sourceTree = "<group>"; };
 		8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexSettingsPage.swift; sourceTree = "<group>"; };
 		8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexMainPage.swift; sourceTree = "<group>"; };
@@ -71,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5F22552C3BD9E000567C50 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +109,7 @@
 		8D90A2352BFB5D4700C54716 = {
 			isa = PBXGroup;
 			children = (
+				8D5F22512C3BD6DB00567C50 /* Info.plist */,
 				8D90A2402BFB5D4700C54716 /* GymHexSwiftUI */,
 				8D90A2532BFB5D4900C54716 /* GymHexSwiftUITests */,
 				8D90A25D2BFB5D4900C54716 /* GymHexSwiftUIUITests */,
@@ -115,12 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */,
-				8D90A26D2BFB602C00C54716 /* GymHexLogInPage.swift */,
 				8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */,
 				8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */,
 				8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */,
 				8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */,
-				8D5F224B2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift */,
+				8D5F224D2C380A4300567C50 /* GymHexCalorieTracker.swift */,
 				8D5F22452BFF44FE00567C50 /* DBHelper.swift */,
 				8DFBEB3D2BFBFE2D00583877 /* GymHexFriendsPage.swift */,
 				8DA6FB0A2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift */,
@@ -169,10 +184,14 @@
 				8D90A23C2BFB5D4700C54716 /* Resources */,
 			);
 			buildRules = (
+				8D3525212C3E812F0045D73A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
 			name = GymHexSwiftUI;
+			packageProductDependencies = (
+				8D5F22542C3BD9E000567C50 /* CodeScanner */,
+			);
 			productName = GymHexSwiftUI;
 			productReference = 8D90A23E2BFB5D4700C54716 /* GymHexSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -245,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 8D90A2352BFB5D4700C54716;
+			packageReferences = (
+				8D5F22532C3BD94C00567C50 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 8D90A23F2BFB5D4700C54716 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,13 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D90A26E2BFB602C00C54716 /* GymHexLogInPage.swift in Sources */,
 				8D5F22482C0DEB9800567C50 /* GymHexWorkoutTracker.swift in Sources */,
+				8D5F224E2C380A4400567C50 /* GymHexCalorieTracker.swift in Sources */,
 				8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */,
 				8D90A2722BFB6C9A00C54716 /* GymHexCreateAccount.swift in Sources */,
 				8DFBEB3A2BFBC66C00583877 /* GymHexMainPage.swift in Sources */,
 				8DFBEB3E2BFBFE2D00583877 /* GymHexFriendsPage.swift in Sources */,
-				8D5F224C2C32BD4B00567C50 /* GymHexWorkoutImageTracker.swift in Sources */,
 				8D90A2462BFB5D4700C54716 /* Item.swift in Sources */,
 				8DA6FB0B2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift in Sources */,
 				8D5F22462BFF44FE00567C50 /* DBHelper.swift in Sources */,
@@ -626,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D5F22532C3BD94C00567C50 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D5F22542C3BD9E000567C50 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D5F22532C3BD94C00567C50 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D90A2362BFB5D4700C54716 /* Project object */;
 }
