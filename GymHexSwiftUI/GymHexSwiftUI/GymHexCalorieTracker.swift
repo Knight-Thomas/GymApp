@@ -7,59 +7,64 @@ struct GymHexCalorieTracker: View {
     @State private var apiResponse: String? // State to store the API response
 
     var body: some View {
-        VStack {
-            Spacer()
+        ZStack {
+            // Background Color
+            Color(red: 51/255, green: 51/255, blue: 51/255)
+                .edgesIgnoringSafeArea(.all) // Ensure background color fills the entire screen
 
-            Image("GymHexTopperLogo")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 100)
-                .padding(.bottom, 50)
+            VStack {
+                Spacer()
 
-            Text("Calorie Tracker")
-                .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                .font(.system(size: 40, weight: .bold))
-                .padding(.bottom, 50)
+                Image("GymHexTopperLogo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100)
+                    .padding(.bottom, 0)
 
-            Button(action: {
-                showingScanner = true
-            }) {
-                Text("Scan Barcode")
+                Text("Calorie Tracker")
                     .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    .padding()
-                    .background(Color(red: 51/255, green: 51/255, blue: 51/255))
-                    .cornerRadius(8)
-            }
-            .sheet(isPresented: $showingScanner) {
-                CodeScannerView(codeTypes: [.ean13, .ean8, .upce]) { result in
-                    showingScanner = false
-                    switch result {
-                    case .success(let code):
-                        scannedCode = code.string
-                        fetchCalorieData(for: code.string) // Call the API when a code is scanned
-                    case .failure(let error):
-                        print("Scanning failed: \(error.localizedDescription)")
+                    .font(.system(size: 40, weight: .bold))
+                    .padding(.bottom, 100)
+
+                Button(action: {
+                    showingScanner = true
+                }) {
+                    Text("Scan Barcode")
+                        .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        .padding()
+                        .background(Color(red: 51/255, green: 51/255, blue: 51/255))
+                        .cornerRadius(8)
+                }
+                .sheet(isPresented: $showingScanner) {
+                    CodeScannerView(codeTypes: [.ean13, .ean8, .upce]) { result in
+                        showingScanner = false
+                        switch result {
+                        case .success(let code):
+                            scannedCode = code.string
+                            fetchCalorieData(for: code.string) // Call the API when a code is scanned
+                        case .failure(let error):
+                            print("Scanning failed: \(error.localizedDescription)")
+                        }
                     }
                 }
-            }
-            .padding(.bottom, 20)
+                .padding(.bottom, 100)
 
-            if let scannedCode = scannedCode {
-                Text("Scanned code: \(scannedCode)")
-                    .foregroundColor(.white)
-                    .padding(.bottom, 10)
-            }
+                if let scannedCode = scannedCode {
+                    Text("Scanned code: \(scannedCode)")
+                        .foregroundColor(.white)
+                        .padding(.bottom, 100)
+                }
 
-            if let apiResponse = apiResponse {
-                Text("API Response: \(apiResponse)")
-                    .foregroundColor(.white)
-                    .padding(.bottom, 10)
-            }
+                if let apiResponse = apiResponse {
+                    Text("API Response: \(apiResponse)")
+                        .foregroundColor(.white)
+                        .padding(.bottom, 100)
+                }
 
-            Spacer()
+                Spacer()
+            }
+            .frame(maxWidth: .infinity) // Ensure VStack takes the full width
         }
-        .background(Color(red: 51/255, green: 51/255, blue: 51/255))
-        .edgesIgnoringSafeArea(.all)
     }
 
     // Function to perform the API call
@@ -104,3 +109,4 @@ struct GymHexCalorieTracker_Previews: PreviewProvider {
         GymHexCalorieTracker()
     }
 }
+
