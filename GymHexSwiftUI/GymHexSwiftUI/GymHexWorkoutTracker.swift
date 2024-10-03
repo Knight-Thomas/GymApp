@@ -29,103 +29,108 @@ struct GymHexWorkoutTracker: View {
     }
 
     var body: some View {
-        VStack {
-            // Top Image
-            Image("GymHexTopperLogo")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 100)
-                .padding(.top, 40) // Adjusted padding to move the logo down
-            
-            CustomSegmentedControl(selectedOption: $selectedWorkout)
-                .padding()
-            
-            ScrollView(.horizontal) {
-                HStack(spacing: 25) {
-                    ForEach(getImagesForSelectedWorkout(), id: \.self) { imageName in
-                        Image(imageName)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: UIScreen.main.bounds.width - 100, height: 300)
-                            .cornerRadius(20)
-                            .shadow(radius: 5, x: 5, y: 5)
-                            .scrollTransition { content, phase in
-                                content
-                                    .opacity(phase.isIdentity ? 1 : 0.5) // Apply opacity animation
-                                    .scaleEffect(y: phase.isIdentity ? 1 : 0.7) // Apply scale animation
-                            }
-                    }
-                }
-            }
-            .scrollTargetLayout() // Align content to the view
-            
-            VStack(spacing: 1) { // Adjusted spacing to make the elements fit better
-                HStack {
-                    Text("Sets:")
-                        .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    Picker("Select sets", selection: $selectedSets) {
-                        ForEach(setsOptions, id: \.self) { set in
-                            Text(set).tag(set)
-                        }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    .background(Color(red: 51/255, green: 51/255, blue: 51/255))
-                    .cornerRadius(5)
-                }
-                .padding(.horizontal)
+        ZStack {
+            // Background Color
+            Color(red: 51/255, green: 51/255, blue: 51/255)
+                .edgesIgnoringSafeArea(.all) // Ensure background color fills the entire screen
+
+            VStack {
+                // Top Image
+                Image("GymHexTopperLogo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 100)
+                    .padding(.top, 40) // Adjusted padding to move the logo down
                 
-                HStack {
-                    Text("Weight:")
-                        .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    Picker("Select weight", selection: $selectedWeight) {
-                        ForEach(weightOptions, id: \.self) { weight in
-                            Text("\(weight) kg").tag(weight)
-                        }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    .background(Color(red: 51/255, green: 51/255, blue: 51/255))
-                    .cornerRadius(5)
-                }
-                .padding(.horizontal)
-                
-                HStack {
-                    Text("Failure Set")
-                        .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    Toggle("", isOn: $failureSet)
-                        .toggleStyle(SwitchToggleStyle(tint: Color(red: 204/255, green: 255/255, blue: 102/255)))
-                }
-                .padding(.horizontal)
-            }
-            .padding(.top, 10)
-            
-            Spacer()
-            
-            Button(action: {
-                // Confirm button action
-                showAlert = true
-            }) {
-                Text("Confirm")
-                    .foregroundColor(Color(red: 51/255, green: 51/255, blue: 51/255))
+                CustomSegmentedControl(selectedOption: $selectedWorkout)
                     .padding()
-                    .background(Color(red: 204/255, green: 255/255, blue: 102/255))
-                    .cornerRadius(8)
+                
+                ScrollView(.horizontal) {
+                    HStack(spacing: 25) {
+                        ForEach(getImagesForSelectedWorkout(), id: \.self) { imageName in
+                            Image(imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: UIScreen.main.bounds.width - 100, height: 300)
+                                .cornerRadius(20)
+                                .shadow(radius: 5, x: 5, y: 5)
+                                .scrollTransition { content, phase in
+                                    content
+                                        .opacity(phase.isIdentity ? 1 : 0.5) // Apply opacity animation
+                                        .scaleEffect(y: phase.isIdentity ? 1 : 0.7) // Apply scale animation
+                                }
+                        }
+                    }
+                }
+                .scrollTargetLayout() // Align content to the view
+                
+                VStack(spacing: 1) { // Adjusted spacing to make the elements fit better
+                    HStack {
+                        Text("Sets:")
+                            .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        Picker("Select sets", selection: $selectedSets) {
+                            ForEach(setsOptions, id: \.self) { set in
+                                Text(set).tag(set)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        .background(Color(red: 51/255, green: 51/255, blue: 51/255))
+                        .cornerRadius(5)
+                    }
+                    .padding(.horizontal)
+                    
+                    HStack {
+                        Text("Weight:")
+                            .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        Picker("Select weight", selection: $selectedWeight) {
+                            ForEach(weightOptions, id: \.self) { weight in
+                                Text("\(weight) kg").tag(weight)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        .background(Color(red: 51/255, green: 51/255, blue: 51/255))
+                        .cornerRadius(5)
+                    }
+                    .padding(.horizontal)
+                    
+                    HStack {
+                        Text("Failure Set")
+                            .foregroundColor(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        Toggle("", isOn: $failureSet)
+                            .toggleStyle(SwitchToggleStyle(tint: Color(red: 204/255, green: 255/255, blue: 102/255)))
+                    }
+                    .padding(.horizontal)
+                }
+                .padding(.top, 10)
+                
+                Spacer()
+                
+                Button(action: {
+                    // Confirm button action
+                    showAlert = true
+                }) {
+                    Text("Confirm")
+                        .foregroundColor(Color(red: 51/255, green: 51/255, blue: 51/255))
+                        .padding()
+                        .background(Color(red: 204/255, green: 255/255, blue: 102/255))
+                        .cornerRadius(8)
+                }
+                .padding(.bottom, 20)
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Workout Confirmed"),
+                        message: Text("Workout: \(selectedWorkout)\nSets: \(selectedSets)\nWeight: \(selectedWeight) kg\nFailure set: \(failureSet)"),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
             }
-            .padding(.bottom, 20)
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Workout Confirmed"),
-                    message: Text("Workout: \(selectedWorkout)\nSets: \(selectedSets)\nWeight: \(selectedWeight) kg\nFailure set: \(failureSet)"),
-                    dismissButton: .default(Text("OK"))
-                )
-            }
+            .contentMargins(50, for: .scrollContent) // Add padding
+            .scrollTargetBehavior(.viewAligned) // Align content behavior
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
         }
-        .contentMargins(50, for: .scrollContent) // Add padding
-        .scrollTargetBehavior(.viewAligned) // Align content behavior
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(red: 51/255, green: 51/255, blue: 51/255))
-        .edgesIgnoringSafeArea(.all)
     }
     
     // Helper function to get images based on the selected workout

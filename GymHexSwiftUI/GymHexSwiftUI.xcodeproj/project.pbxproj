@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D056EBA2C8DFC5D00306F7D /* GymHexMainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D056EB92C8DFC5D00306F7D /* GymHexMainAppView.swift */; };
+		8D056EBC2C8DFE6E00306F7D /* GymHexLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D056EBB2C8DFE6E00306F7D /* GymHexLogIn.swift */; };
 		8D5F22462BFF44FE00567C50 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F22452BFF44FE00567C50 /* DBHelper.swift */; };
 		8D5F22482C0DEB9800567C50 /* GymHexWorkoutTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */; };
 		8D5F224E2C380A4400567C50 /* GymHexCalorieTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F224D2C380A4300567C50 /* GymHexCalorieTracker.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D056EB92C8DFC5D00306F7D /* GymHexMainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexMainAppView.swift; sourceTree = "<group>"; };
+		8D056EBB2C8DFE6E00306F7D /* GymHexLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexLogIn.swift; sourceTree = "<group>"; };
 		8D5F22452BFF44FE00567C50 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexWorkoutTracker.swift; sourceTree = "<group>"; };
 		8D5F224D2C380A4300567C50 /* GymHexCalorieTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymHexCalorieTracker.swift; sourceTree = "<group>"; };
@@ -131,7 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				8D90A2412BFB5D4700C54716 /* GymHexSwiftUIApp.swift */,
+				8D056EB92C8DFC5D00306F7D /* GymHexMainAppView.swift */,
 				8D90A2712BFB6C9A00C54716 /* GymHexCreateAccount.swift */,
+				8D056EBB2C8DFE6E00306F7D /* GymHexLogIn.swift */,
 				8DFBEB392BFBC66C00583877 /* GymHexMainPage.swift */,
 				8DFBEB3B2BFBFB6400583877 /* GymHexLeaderboardPage.swift */,
 				8D5F22472C0DEB9800567C50 /* GymHexWorkoutTracker.swift */,
@@ -310,10 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5F22482C0DEB9800567C50 /* GymHexWorkoutTracker.swift in Sources */,
+				8D056EBA2C8DFC5D00306F7D /* GymHexMainAppView.swift in Sources */,
 				8D5F224E2C380A4400567C50 /* GymHexCalorieTracker.swift in Sources */,
 				8D90A2442BFB5D4700C54716 /* ContentView.swift in Sources */,
 				8D90A2722BFB6C9A00C54716 /* GymHexCreateAccount.swift in Sources */,
 				8DFBEB3A2BFBC66C00583877 /* GymHexMainPage.swift in Sources */,
+				8D056EBC2C8DFE6E00306F7D /* GymHexLogIn.swift in Sources */,
 				8DFBEB3E2BFBFE2D00583877 /* GymHexFriendsPage.swift in Sources */,
 				8D90A2462BFB5D4700C54716 /* Item.swift in Sources */,
 				8DA6FB0B2BFCA2F0000BFBE5 /* GymHexSettingsPage.swift in Sources */,

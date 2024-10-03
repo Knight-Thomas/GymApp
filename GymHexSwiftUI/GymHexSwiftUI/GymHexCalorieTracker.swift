@@ -64,6 +64,8 @@ struct GymHexCalorieTracker: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity) // Ensure VStack takes the full width
+            
+
         }
     }
 

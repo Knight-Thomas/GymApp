@@ -5,6 +5,7 @@
 //  Created by Tom Knight on 20/05/2024.
 //
 
+
 import SwiftUI
 import SwiftData
 
@@ -25,9 +26,8 @@ struct GymHexSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GymHexMainAppView() // Use MainAppView as the entry point
         }
         .modelContainer(sharedModelContainer)
     }
 }
-
